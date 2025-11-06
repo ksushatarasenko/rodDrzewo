@@ -5,7 +5,7 @@ import PersonCard from "../components/PersonCard";
 export default function Home() {
   // Группы ID для разных рядов
   const row1 = [11,1,2,9,12]; // дети
-  const row2 = [10,3,4,13,14]; // родители
+  const row2 = [10,3,4,13,14,27,31]; // родители
   const row3 = [5,6,7,8]; // бабушки и дедушки
   const row4 = [18,19,20,21]; // например, прабабушки и прадедушки
 

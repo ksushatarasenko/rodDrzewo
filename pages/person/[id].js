@@ -15,7 +15,7 @@ export default function PersonPage() {
     отец: getPerson(person.отец),
     супруг: getPerson(person.супруг),
     сестры: [getPerson(person.сестра1), getPerson(person.сестра2)].filter(Boolean),
-    братья: [getPerson(person.брат1), getPerson(person.брат2)].filter(Boolean),
+    братья: [getPerson(person.брат1),getPerson(person.брат3), getPerson(person.брат2)].filter(Boolean),
     дети: (person.дети || []).map((id) => getPerson(id)).filter(Boolean),
     бабушка_по_отцу: getPerson(person.бабушка_по_отцу),
     дедушка_по_отцу: getPerson(person.дедушка_по_отцу),
