@@ -40,6 +40,7 @@ export default function PersonPage() {
             />
           )}
           <h1 className="text-3xl font-semibold">{person.имя}</h1>
+          <h3 className="font-semibold">дівоче призвище: {person.девечья_фамилия}</h3>
           <p className="text-gray-600">
             {person.год_рождения}
             {person.год_смерти ? ` — ${person.год_смерти}` : ""}

@@ -63,14 +63,14 @@ export default function FullPersonPage() {
           )}
           <h1 className="text-3xl font-semibold">{person.имя}</h1>
           {person.девечья_фамилия && (
-            <p className="text-gray-500 text-lg">{person.девечья_фамилия}</p>
+            <p className="text-gray-500 text-lg">дівоче призвище:  {person.девечья_фамилия}</p>
           )}
           <p className="text-gray-600 mt-1">
             {birthDate}
             {deathDate ? ` — ${deathDate}` : ""}
           </p>
           {person.место_жительства && (
-            <p className="text-gray-700 mt-2 italic">🏠 {person.место_жительства}</p>
+            <p className="text-gray-700 mt-2 italic">🏠мешка: {person.место_жительства}</p>
           )}
         </div>
 
