@@ -2,23 +2,19 @@ import Link from "next/link";
 
 export default function PersonCard({ person }) {
   return (
-    <Link
-      href={`/person/${person.id}`}
-      className="block bg-white rounded-xl shadow-md hover:shadow-lg p-4 transition text-center"
-    >
-      {person.фото && (
-        <img
-          src={person.фото}
-          alt={person.имя}
-          className="w-24 h-24 object-cover rounded-full mx-auto mb-2 border"
-        />
-      )}
-      <h3 className="font-semibold">{person.имя}</h3>
-      <h3 className="font-semibold">{person.девечья_фамилия}</h3>
-      <p className="text-gray-600 text-sm">
-        {person.год_рождения}
-        {person.год_смерти ? ` — ${person.год_смерти}` : ""}
-      </p>
-    </Link>
+    <div className="w-40 text-center">
+      <img
+        src={person.фото}
+        className="w-32 h-32 object-cover rounded-full mx-auto shadow"
+      />
+
+      <p className="mt-2 font-semibold">{person.имя}</p>
+
+      <Link href={`/person/${person.id}/full`}>
+        <button className="mt-3 px-3 py-1 bg-blue-500 hover:bg-blue-600 text-white rounded-lg text-sm">
+          Біографія
+        </button>
+      </Link>
+    </div>
   );
 }

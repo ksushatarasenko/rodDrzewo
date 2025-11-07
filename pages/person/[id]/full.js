@@ -45,12 +45,13 @@ export default function FullPersonPage() {
   return (
     <Layout>
       <div className="max-w-3xl mx-auto">
-        <Link
-          href={`/person/${person.id}`}
-          className="text-blue-600 underline block mb-6"
+        <button
+          onClick={() => router.back()}
+          className="mb-6 px-4 py-2 bg-gray-200 hover:bg-gray-300 rounded-lg shadow"
         >
           ← Назад
-        </Link>
+        </button>
+
 
         {/* Основная информация */}
         <div className="flex flex-col items-center text-center mb-8">
